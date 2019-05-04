@@ -64,6 +64,9 @@ public void actionPerformed(ActionEvent ae){
 				}
 
 				if(verify.equals("valid")){
+				System.out.println("Valid password");
+				JOptionPane.showMessageDialog(this, "Correct Password!", "Login Successful");
+				JOptionPane.showMessageDialog(this, "Receiving Screen!", "Attention", JOptionPane.WARNING_MESSAGE);
 				try{
 				width = verification.readUTF();
 				height = verification.readUTF();
